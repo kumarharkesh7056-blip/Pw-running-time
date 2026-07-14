@@ -19,3 +19,14 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+function openCourse(course) {
+    if (course === "upsc") {
+        window.location.href = "upsc.html";
+    } else if (course === "ssc") {
+        window.location.href = "ssc.html";
+    } else if (course === "jee") {
+        window.location.href = "jee.html";
+    } else if (course === "notes") {
+        window.location.href = "notes.html";
+    }
+}
