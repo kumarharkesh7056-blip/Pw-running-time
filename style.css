@@ -1,84 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
 body{
-margin:0;
-font-family:Arial;
-background:#0f172a;
-color:white;
+    background:#f4f4f4;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px;
-background:#ff6b00;
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-.logo{
-font-size:25px;
-font-weight:bold;
+header h1{
+    font-size:32px;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:10px;
+header p{
+    margin-top:8px;
 }
 
-.hero{
-text-align:center;
-padding:60px 20px;
+.search-box{
+    text-align:center;
+    margin:20px;
 }
 
-.hero input{
-padding:12px;
-width:250px;
-border-radius:8px;
-border:none;
+.search-box input{
+    width:90%;
+    max-width:450px;
+    padding:12px;
+    border:2px solid #6a1b9a;
+    border-radius:10px;
+    font-size:16px;
 }
 
-.hero button{
-padding:12px 20px;
-background:#ff6b00;
-border:none;
-color:white;
-border-radius:8px;
-margin-left:10px;
-}
-
-.courses{
-display:flex;
-justify-content:center;
-gap:20px;
-padding:30px;
-flex-wrap:wrap;
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    padding:20px;
 }
 
 .card{
-background:#1e293b;
-padding:20px;
-border-radius:15px;
-width:250px;
-text-align:center;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:.3s;
 }
 
 .card:hover{
-transform:scale(1.05);
-transition:.3s;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#111827;
-}
-function openCourse(course) {
-    if (course === "upsc") {
-        window.location.href = "upsc.html";
-    } else if (course === "ssc") {
-        window.location.href = "ssc.html";
-    } else if (course === "jee") {
-        window.location.href = "jee.html";
-    } else if (course === "notes") {
-        window.location.href = "notes.html";
-    }
+    transform:scale(1.05);
+    background:#6a1b9a;
+    color:white;
 }
